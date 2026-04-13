@@ -10,7 +10,6 @@ io.on('connection', (socket) => {
   console.log('a user connected:', socket.id);
 
   socket.on('user message', (msg) => {
-    // message ke saath timestamp aur sender id add kar rahe hain
     const data = {
       text: msg,
       id: socket.id,
